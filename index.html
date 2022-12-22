@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Taskmaster/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/rrx6jas.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <title>Taskmaster</title>
+</head>
+
+<body>
+  <main>
+    <h1 class="title">Welcome, Little Alex Horne.<br>What would you like to do today?</h1>
+
+    <div class="btns">
+      <div class="btn-wrapper">
+        <button class="btn" onclick="openWindow('add-window')">
+          Add points
+        </button>
+      </div>
+      <div class="btn-wrapper">
+        <button class="btn" onclick="openWindow('scoreboard')">
+          View Scoreboard
+        </button>
+      </div>
+      <div class="btn-wrapper">
+        <button class="btn">
+          View script
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <div class="window" id="add-window">
+    <button class="exit" onclick="closeWindow('add-window')">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+        viewBox="0 0 16 16">
+        <path
+          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+      </svg>
+    </button>
+
+    <div class="people" style="height:auto!important;margin-top:20vh;">
+      <div class="person-icon" id="lran-icon">
+        <img src="/Taskmaster/img/IMG_0488.png" alt="L'ran Beech">
+        <input class="score-increase" type="number" id="input1">
+      </div>
+      <div class="person-icon" id="granny-icon">
+        <img src="/Taskmaster/img/granny.png" alt="MaryAnne Beech">
+        <input class="score-increase" type="number" id="input2">
+      </div>
+      <div class="person-icon" id="grandad-icon">
+        <img src="/Taskmaster/img/WhatsApp Image 2021-09-01 at 15.45.42.png" alt="John Beech">
+        <input class="score-increase" type="number" id="input3">
+      </div>
+      <div class="person-icon" id="mum-icon">
+        <img src="/Taskmaster/img/WhatsApp Image 2021-09-01 at 15.28.32.png" alt="Charlie Amelines">
+        <input class="score-increase" type="number" id="input4">
+      </div>
+      <div class="person-icon" id="papi-icon">
+        <img src="/Taskmaster/img/IMG_4685.png" alt="Gilbert Alexander Amelines">
+        <input class="score-increase" type="number" id="input5">
+      </div>
+    </div>
+    <div class="add-wrapper">
+      <button class="add" onclick="addPoints()">Add</button>
+    </div>
+  </div>
+
+  <div class="window" id="scoreboard">
+    <button class="exit" onclick="closeWindow('scoreboard')">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+        viewBox="0 0 16 16">
+        <path
+          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+      </svg>
+    </button>
+    <div class="people" id="people">
+      <div class="person" id="lran" data-score="0">
+        <img src="/Taskmaster/img/IMG_0488.png" alt="L'ran Beech">
+      </div>
+      <div class="person" id="granny" data-score="0">
+        <img src="/Taskmaster/img/granny.png" alt="MaryAnne Beech">
+      </div>
+      <div class="person" id="grandad" data-score="0">
+        <img src="/Taskmaster/img/WhatsApp Image 2021-09-01 at 15.45.42.png" alt="John Beech">
+      </div>
+      <div class="person" id="mum" data-score="0">
+        <img src="/Taskmaster/img/WhatsApp Image 2021-09-01 at 15.28.32.png" alt="Charlie Amelines">
+      </div>
+      <div class="person" id="papi" data-score="0">
+        <img src="/Taskmaster/img/IMG_4685.png" alt="Gilbert Alexander Amelines">
+      </div>
+    </div>
+  </div>
+
+  <script src="/Taskmaster/script.js"></script>
+</body>
+
+</html>
