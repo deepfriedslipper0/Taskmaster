@@ -27,7 +27,7 @@
         </button>
       </div>
       <div class="btn-wrapper">
-        <button class="btn">
+        <button class="btn" onclick="openWindow('script')">
           View script
         </button>
       </div>
@@ -94,6 +94,140 @@
       <div class="person" id="papi" data-score="0">
         <img src="/Taskmaster/img/IMG_4685.png" alt="Gilbert Alexander Amelines">
       </div>
+    </div>
+  </div>
+
+  <div class="window" id="script">
+    <button class="exit" onclick="closeWindow('script')">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+        viewBox="0 0 16 16">
+        <path
+          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+      </svg>
+    </button>
+    <div class="page" id="1">
+      <p>
+        NICO: Hello, I'm Meg Davies, the Taskmaster, and welcome to a new episode of Taskmaster! I've locked Greg Davies
+        in my basement and taken his place. But enough of that. Who are our contestants? Please
+        welcome: Alex Amelines, Charlie Amelines, L'ran Beech, MaryAnne Beech and John Beech!
+        The stakes are high and the competition is fierce as these brave contestants battle it out for the ultimate
+        Taskmaster title. Who will come out on top and earn the right to brag to their friends and family about their
+        victory? Stay tuned to find out! And now, next to me, a man who will still not tell me the secret of how to
+        whistle. *tries to whistle* *pause* It's little Rafael!<br><br>RAFI: *whistles* Thank you, Meg. Do you want to
+        play a little game?<br><br>NICO: I love little games.<br><br>RAFI: Well then, you'll love this little game.
+        *pause* Riddle me this: I'm light as a feather, but even the world's strongest man couldn't hold me for much
+        longer than a minute. What am I?<br><br>NICO: I don't know, Alex. What are you?<br><br>RAFI: A
+        human.<br><br>NICO: Pardon?<br><br>RAFI: Yes, can't you tell?<br><br>*insert laughing here*<br><br>NICO: Anyway,
+        let's get on with the first task of the show!
+      </p>
+      <button class="next" onclick="nextPage()">
+        Next Page
+      </button>
+    </div>
+    <div class="page" id="2">
+      <p>
+        <strong>Task 1</strong><br>
+        NICO: What's the first task, Alex?<br><br>RAFI: For the first task of the show, everyone must pick an object in
+        this room and hold it if possible. If not, just stand next to it. I would now like MaryAnne Beech to read the
+        task out.<br><br>MARYANNE: Create the highest pitched sound with your object; hitting tools have been provided
+        if necessary. Highest pitched sound wins. Also, you may trade objects, provided neither of you have hit your
+        objects yet and you both agree to do it. You have 1 minute. Your time started when you opened the
+        task.<br><br>RAFI: Ok, one minute is up, we will now hear your sounds. Mug, bookend, hook, penpot, music stand,
+        piano (if used). The winner is [insert winner]. Congratulations!<br><br>NICO: [comments] Ok, Alex, let's have a
+        look at the scoreboard.<br><br>RAFI: Rightio.<br><br>NICO: Ok, what's the second task, Alex?
+      </p>
+      <button class="next" onclick="nextPage()">
+        Next Page
+      </button>
+    </div>
+    <div class="page" id="3">
+      <p>
+        <strong>Task 2</strong><br>
+        RAFI: The second task involves rubber, ducks and rubber ducks! I would like Charlie Amelines to read the task
+        out.<br><br>CHARLIE: There are 30 images of yellow rubber ducks hidden in this room. Find the most in order to
+        win. You must have all your ducks on your person at all times; if you drop one, it does not count towards your
+        duck total.There are also 2 bonus points up for grabs for whoever finds the mysterious pink duck. You have 10
+        minutes. Your time starts now.<br><br>RAFI: 10 minutes is up. Let's have a look at your scores!<br><br>NICO:
+        While Alex is counting up your ducks, I just want to say [comments].<br><br>RAFI: The winner is [winner]! Let us
+        move swiftly on to the third task!
+      </p>
+      <button class="next" onclick="nextPage()">
+        Next Page
+      </button>
+    </div>
+    <div class="page" id="4">
+      <p>
+        <strong>Task 3</strong><br>
+        RAFI: Task Number 3 unleashes the artiness within all of our contestants. This is the first group task, so I
+        have assigned you all to either a group of 2 or a group of 3. We'll have Charlie and L'ran together, and Alex,
+        MaryAnne and John together. Right, let us begin. L'ran is going to read the task out for us.<br><br>L'RAN:
+        Create the most flattering portrait of the Taskmaster with the art supplies provided. One of your teammates must
+        be blindfolded throughout, and this teammate is the only one who may touch or use the art supplies or paper. The
+        other teammates must guide the blindfolded one but must not come into contact with them. You have 15 minutes.
+        Your time starts when the Taskmaster says the name of a vegetable.<br><br>RAFI: 15 minutes is up!<br><br>NICO:
+        [comments]<br><br>RAFI: Let's have a look at some scores. Congratulations to [winner]!
+      </p>
+      <button class="next" onclick="nextPage()">
+        Next Page
+      </button>
+    </div>
+    <div class="page" id="5">
+      <p>
+        <strong>Task 4</strong><br>
+        NICO: Moving on to the next task. What have you got in store for our contestants Alex?<br><br>RAFI: For this
+        fourth task, I'm going to need everyone to write down ten fantastic words at the top of your sheet of paper,
+        along with your names. I will give you 2 minutes to do so.<br><br>2 minutes is up. So, earlier, I asked an AI to
+        do this section of the task to see what it would come up with.<br><br>NICO: What did it come up
+        with?<br><br>RAFI: Esoteric: intended for or likely to be understood by only a small number of people with a
+        specialized knowledge or interest.
+
+        Maverick: an independent individual who does not conform to the norms or expectations of a group.
+
+        Sagacious: having good judgement; wise and shrewd.
+
+        Magnanimous: generous and forgiving, especially towards an adversary.
+
+        Languid: lacking energy or vitality; sluggish.
+
+        Garrulous: excessively talkative, especially on trivial matters.
+
+        Tenacious: persistent and determined.
+
+        Ethereal: otherworldly or intangible.
+
+        Ephemeral: lasting for a very short time.
+
+        Precocious: advanced in development, especially mentally.
+        <br><br>NICO: Who's
+        going to
+        read
+        out the task,
+        Alex?<br><br>RAFI: Alex!
+      </p>
+      <button class="next" onclick="nextPage()">
+        Next Page
+      </button>
+    </div>
+    <div class="page" id="6">
+      <p>
+        ALEX: Write a story based around the words you have just been given. The most
+        creative story wins. All the words must be used, or else you will receive no points. You have 20 minutes. Your
+        time starts now.<br><br>RAFI: 20 minutes is up!<br><br>NICO: Excellent, let's have a look, shall we? [bestow
+        points].<br><br>RAFI: Congratulations to [winner] for staying tenacious, without being languid and refraining
+        from becoming a bit garrulous. And to Meg, for being a magnanimous host.<br><br>NICO: It is now time for the
+        fifth task - the final task of the show!
+      </p>
+      <button class="next" onclick="nextPage()">
+        Next Page
+      </button>
+    </div>
+    <div class="page" id="7">
+      <p>
+
+      </p>
+      <button class="next" onclick="nextPage()">
+        Next Page
+      </button>
     </div>
   </div>
 
