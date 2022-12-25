@@ -1,3 +1,11 @@
+var pages = document.getElementsByClassName('page');
+
+for (var i = 0; i < pages.length; i++) {
+  var page = pages[i];
+  var id = page.id;
+  page.style.zIndex = 10 - id;
+}
+
 function sortPeople() {
   var div = document.getElementById('people');
   var childElements = div.children;
@@ -62,4 +70,26 @@ function addPoints() {
   input3.value = "";
   input4.value = "";
   input5.value = "";
-} 
+}
+
+function nextPage() {
+  const window = document.getElementById('script');
+
+  let lowestId = Infinity;
+  let lowestIdDiv;
+
+  // Find all divs within the element
+  const divs = window.getElementsByTagName('div');
+
+  // Iterate over the divs and find the one with the lowest id
+  for (const div of divs) {
+    const id = parseInt(div.id, 10);
+    if (id < lowestId) {
+      lowestId = id;
+      lowestIdDiv = div;
+    }
+  }
+
+  // Delete the div with the lowest id
+  lowestIdDiv.parentNode.removeChild(lowestIdDiv);
+}
